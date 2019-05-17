@@ -232,13 +232,13 @@ nav a {
 .home .content-destination img {
   border-radius: 10px;
 }
-.home .content-pick {
+.content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .destination {
+.content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
@@ -256,4 +256,13 @@ header h1 {
 header p {
   margin-bottom: 15px;
   border-bottom: 2px dashed grey;
+}
+.content-pick .destination .btn {
+  margin: 0 auto;
+  width: 100%
+        height:35px;
+  background-color: teal;
+  color: white;
+  border-radius: 15px;
+  text-align: center;
 }
