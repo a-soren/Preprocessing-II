@@ -6,6 +6,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @mobile
+
    
     
     .text-content {
@@ -26,7 +28,7 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-
+    @mobile
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -42,8 +44,16 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @mobile
+    {
+      display:flex;
+      flex-flow:column;
+    }
+
     img {
       border-radius: 10px;
+    }
+    
     }
   }
 
@@ -52,10 +62,36 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @mobile
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
     }
+    
+    
   }
-}// home
+
+// home
+
+header{
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  @mobile
+
+  img{
+    margin-bottom:30px;
+  }
+  h1{
+    margin-bottom: 5px;
+  }
+  p{
+    margin-bottom:15px;
+    border-bottom: 2px dashed grey;
+  }
+}
+
+.content-pick .destination .btn{
+  .button( center, center);
+}
